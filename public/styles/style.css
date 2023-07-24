@@ -1,0 +1,40 @@
+:root {
+    --deep-blue: #1D5D9B;
+    --light-blue: #75C2F6;
+    --deep-yellow: #F4D160;
+    --light-yellow: #FBEEAC;
+}
+
+body {
+    background-color: var(--deep-blue);
+}
+
+.main.container-fluid {
+    background-color: var(--light-blue);
+    padding: 50px 50px;
+}
+
+.main-frame {
+    background-color: var(--light-yellow);
+    width: 48%;
+    margin: 50px auto;
+    padding: 10px 20px 20px;
+}
+
+.white-dot {
+    border-radius: 100%;
+    border-color: white;
+    background: white;
+    height: 20px;
+    width: 10px;
+    margin: auto 10px;
+}
+
+.trns-background {
+    background-color: transparent;
+    border: none;
+}
+
+.overline {
+    text-decoration: line-through;
+}

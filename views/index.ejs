@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs")  %>
+
+<h1>To Do List</h1>
+
+
+<div class="main-frame">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <% for (var d=0; d<13; d++) { %>
+            <div class="white-dot col-1"></div>
+            <% } %>
+        </div>
+    </div>
+    <div class="container my-5">
+    <h2>My To Do list</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <ul class="list-group">
+            <form method="post" action="checks">
+            <% for (var chore=0;chore<todayTodo.length;chore++) {%>
+            <li class="list-group-item my-1 check<%= chore %>">
+              <input class="list-check form-check-input me-1" type="checkbox" name="check" id="check<%= chore %>" value="check<%= chore %>">
+              <label class="form-check-label" for="check<%= chore %>"><%= todayTodo[chore] %></label>
+            </li>
+            <% } %>
+        </form>
+            <form action="submit" class="trns-background row mt-4" method="post">
+                <div class="col-10">
+                <input class="form-control w-100" type="text" name="newChore" id="addnew">
+            </div>
+            <div class="col-2">
+                <input type="submit" value="Add" class="btn btn-primary">
+            </div>
+            </form>
+    </div>
+</div>
+
+</div>
+</div>
+
+<%- include("partials/footer.ejs")  %>
