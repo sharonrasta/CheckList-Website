@@ -12,6 +12,7 @@ body {
 .main.container-fluid {
     background-color: var(--light-blue);
     padding: 50px 50px;
+    margin-bottom: 50px;
 }
 
 .main-frame {
