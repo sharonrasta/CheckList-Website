@@ -3,6 +3,7 @@
     --light-blue: #75C2F6;
     --deep-yellow: #F4D160;
     --light-yellow: #FBEEAC;
+    --main-font: 'Rubik', sans-serif;
 }
 
 body {
@@ -38,4 +39,8 @@ body {
 
 .overline {
     text-decoration: line-through;
+}
+
+.nav-item {
+font-family: var(--main-font);
 }
